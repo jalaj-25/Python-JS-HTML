@@ -1,11 +1,23 @@
-let firstName = null;
+//Arrow function
+/*let sayHi = () => alert("Hello!");
+sayHi();
+*/
+let age = prompt("What is your age?", 18);
+
+let welcome = (age < 18) ?
+  () => alert('Hello!') :
+  () => alert("Greetings!");
+
+welcome();
+
+/*let firstName = null;
 let lastName = null;
 let nickName = "Supercoder";
 
 // shows the first defined value:
 alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
 
-/*let height = null;
+let height = null;
 let width = null;
 
 // important: use parentheses
