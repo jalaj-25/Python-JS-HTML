@@ -9,7 +9,7 @@ let welcome = (age < 18) ?
   () => alert("Greetings!");
 
 welcome();
-
+ 
 /*let firstName = null;
 let lastName = null;
 let nickName = "Supercoder";
