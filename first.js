@@ -1,7 +1,9 @@
+result = prompt(title, [default]);
+
 //Arrow function
 /*let sayHi = () => alert("Hello!");
 sayHi();
-*/
+
 let age = prompt("What is your age?", 18);
 
 let welcome = (age < 18) ?
