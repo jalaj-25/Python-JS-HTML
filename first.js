@@ -1,7 +1,14 @@
-result = prompt(title, [default]);
+let str = "123";
+alert(typeof str); // string
+
+let num = Number(str); // becomes a number 123
+
+alert(typeof num); // number
+
+/*result = prompt(title, [default]);
 
 //Arrow function
-/*let sayHi = () => alert("Hello!");
+let sayHi = () => alert("Hello!");
 sayHi();
 
 let age = prompt("What is your age?", 18);
@@ -12,7 +19,7 @@ let welcome = (age < 18) ?
 
 welcome();
  
-/*let firstName = null;
+let firstName = null;
 let lastName = null;
 let nickName = "Supercoder";
 
