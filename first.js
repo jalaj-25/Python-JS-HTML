@@ -1,11 +1,19 @@
-let str = "123";
+let height = null;
+let width = null;
+
+// important: use parentheses
+let area = (height ?? 100) * (width ?? 50);
+
+alert(area); // 5000
+
+/*let str = "123";
 alert(typeof str); // string
 
 let num = Number(str); // becomes a number 123
 
 alert(typeof num); // number
 
-/*result = prompt(title, [default]);
+result = prompt(title, [default]);
 
 //Arrow function
 let sayHi = () => alert("Hello!");
