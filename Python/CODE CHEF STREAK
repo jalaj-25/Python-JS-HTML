@@ -1,0 +1,44 @@
+t = int(input())
+
+while t > 0:
+    n = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    t -= 1
+# Your code goes here
+def find_max_streak(n, om_solved, addy_solved):
+    om_streak = addy_streak = max_streak = 0
+
+    for i in range(n):
+        if om_solved[i] > addy_solved[i]:
+            om_streak += 1
+            addy_streak = 0
+        elif om_solved[i] < addy_solved[i]:
+            addy_streak += 1
+            om_streak = 0
+        else:
+            om_streak += 1
+            addy_streak += 1
+
+        max_streak = max(max_streak, om_streak, addy_streak)
+
+    if om_streak > addy_streak:
+        return "OM"
+    elif om_streak < addy_streak:
+        return "ADDY"
+    else:
+        return "DRAW"
+
+def main():
+    t = int(input("Enter the number of test cases: "))
+
+    for _ in range(t):
+        n = int(input())
+        om_solved = list(map(int, input().split()))
+        addy_solved = list(map(int, input().split()))
+
+        result = find_max_streak(n, om_solved, addy_solved)
+        print(result)
+
+if __name__ == "__main__":
+    main()
