@@ -1,0 +1,23 @@
+def minimum_skill_difference(N, skills):
+    skills.sort()
+    min_difference = float('inf')
+
+    for i in range(N - 1):
+        difference = skills[i + 1] - skills[i]
+        if difference < min_difference:
+            min_difference = difference
+
+    return min_difference
+
+def main():
+    T = int(input())
+    
+    for _ in range(T):
+        N = int(input())
+        skills = list(map(int, input().split()))
+
+        result = minimum_skill_difference(N, skills)
+        print(result)
+
+if __name__ == "__main__":
+    main()
