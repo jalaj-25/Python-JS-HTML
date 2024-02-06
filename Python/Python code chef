@@ -1,0 +1,9 @@
+def max_passing_mark(N, X, marks):
+    marks.sort()
+    passing_index = N - X
+    return marks[passing_index - 1] + 1
+T = int(input().strip())
+for _ in range(T):
+    N, X = map(int, input().split())
+    marks = list(map(int, input().split()))
+    print(max_passing_mark(N, X, marks))
