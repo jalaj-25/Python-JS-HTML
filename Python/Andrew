@@ -1,0 +1,23 @@
+def min_plates(t, cases):
+    for case in cases:
+        n, m = case[0]
+        plates = case[1]
+        plates.sort(reverse=True) 
+        total_meatballs = 0
+        min_plates_needed = 0        
+        for i in range(n):
+            total_meatballs += plates[i]
+            min_plates_needed += 1
+            if total_meatballs >= m:
+                print(min_plates_needed)
+                break
+        else:
+            if total_meatballs < m:
+                print(-1)
+t = int(input())
+cases = []
+for _ in range(t):
+    n, m = map(int, input().split())
+    plates = list(map(int, input().split()))
+    cases.append(((n, m), plates))
+min_plates(t, cases)
