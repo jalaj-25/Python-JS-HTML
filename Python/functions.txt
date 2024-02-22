@@ -1,0 +1,86 @@
+<body>
+<marquee>🐇</marquee>
+<marquee><marquee>🐢 </marquee></marquee>
+
+
+\a- return a match if the soecifies character are atan begining of the string.
+\b-> return  match where the specified character are at begining or at begingin of the word .
+\B-> Returns a match where th specified character are present but not at begining of the word.
+\d-> Returns a match hwree the string contains a digit.
+\t-> Returns a the value of string dose not have digits.
+\s-> Returnsa match where the string contains a white space character.
+\S-> Returns a match where the string DOSE NOT contains a white space character.
+\w-> Return s a match where the string contains any worrd character.
+\W-> Return a match where the string DOSE NOT contain any white spaces.
+\Z-> Returns a match if the specifies character are at the end of string.
+
+The match funciton suggest the match() function matched a pattern to string with optional flags, The syntrac=x of match() functionis 
+
+1. re. match(pattern, string, flags-0)...
+
+it checks the given string begins form yher given word or not in the exact.
+re. I -> Caser sensitive matching.
+re. M -> Matches at the end of the line.
+re. X -> Ignore white spaces.
+
+
+__SEARCH FUNCTION->__
+THE SEARCH FUCNTION IN THE RE MODUYLE SEARCH FPR A PATTERN ANYWHERE IN THE STRING IRS SYNTAX OF CAN BE GIVEN A re.search(pattern, string, flag=0)
+The syntax is similat to the match function. Tbe function  search for first occurance of pattern within a string with optional flag. If the search is successful, a match object is returned and none otherewise.
+
+__Findall()___
+this function is used to search a string and return a list of matcheds of the pattern in the string. if no mach is found then the returnrd list is empty. in other words it will find the matched pattern as many times it occuerer in a string the syntax is re.findall(pattern, input_string, flag=0)
+
+__sub funcion__
+the dsub() fucntion int he re module can br used to searcxh a pattern in the string andreplace it with another pattern. The syntax of sub() fucntion can be fgiven  re.sub(pattern, repl, string,  max = 0)
+
+
+
+
+
+
+_______________FLAG OPTIONS__________________
+the search findall, m,atch function of the modu;e take options to modify the behaviour of the pattern match
+some of these flags are:
+re.i or re.IGNORECASE -> ignore case of character and make it same.
+re.S or re.DOTALL -> enables for(.) to match newline  by default dot matches any character other than the newline character.
+re.M or re.MULTILINE -> makes the ^ AND $ to match thhe satrt and end of each line. THta is matches even after and before line breaks in the string. By default ^ and $ matched tge strat and end of the whole strring.
+re.L or re.LOCALE -> makes tghe f;lag \w to match all charater that are considered letters in the given current local settings.
+re.U and re.UNICODE -> letters all scripts and words.
+
+
+ 
+fucntion that uses anpother function is known as CALLING FUNCTION and the function that is called is CALLED FUCNTION
+input that the functio takes are called ARGUMMENTS/PARAMETERS.
+When a function is called it returns a result bvack to the calling function it is said to return a that result.
+Thecalling function may or may not pas parametrers tot he called function.
+If thr called function accepts arguments the calling function wipp padd parameters else not.
+
+FUNCTION DECLARATION-It is a declaration that identifies a fucntion witht the name, list of argument that it accepts and the type of data it returns.
+
+
+
+FUNCTION DEFINATION- 
+starts with def.
+followed with (()).
+after () a : is placed.
+parameter of argument that the function accept are placed within paraentheses.
+1st statement of a fucntion can be an optimal statement the ___docstring___ describe what the fucntion dose.
+
+
+_____GLOBAL STATEMENT_________
+To define a variable inside a fucnrion as a global we must use global statement.
+It declares local or inner value of the function to have module scope.
+
+__Resolution of name__
+4teel you about the scope of the name.
+
+__Return statement__
+
+__Parametere or Argument__
+
+__Required arguments__
+in the required arguments are passed onn a function in correcr positional order. Alos the number of arguments in the function call shoulf=d easilt match number of arguments.
+
+__Keyword arguments__
+When we call a function with some values are assigned to arguments based on their function python also allows function to be called using keyword arguments in which the order of the argument can be changfed. Value is not assigned on the basis of the locaition of the keyword.
