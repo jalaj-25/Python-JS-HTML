@@ -1,0 +1,8 @@
+def max_bags(X, Y):
+    total_coins = X * Y
+    bags = total_coins // 100
+    return bags
+T = int(input())
+for _ in range(T):
+    X, Y = map(int, input().split())
+    print(max_bags(X, Y))
