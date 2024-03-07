@@ -1,0 +1,7 @@
+T = int(input())
+for i in range(T):
+    referees_decisions = list(map(int, input().split()))
+    if all(decision == 0 for decision in referees_decisions):
+        print("IN")
+    else:
+        print("OUT")
