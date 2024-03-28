@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #0066a7;
+    height: 50px;
+    color: white;
+    width: 100%;
+}
+
+.log{
+    color: #55ccf6;
+    font-size: 15px;
+}
+
+p{
+    background-color: #0066a7;
+    text-align: right;
+    margin: 0px 25px 0 0;
+    padding: 5px 0 0 0;
+}
+
+.content{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 34rem;
+    height: 34rem;
+}
+
+.search {    
+    background-image: url("https://pizzaonline.dominos.co.in/static/assets/home_search.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 50%;
+}
+
+.dominos {
+    height: 200PX;
+    margin: 25PX 25PX 25PX 25PX; /*TTOP RIGHT LEFT BOTTOM */
+}
+
+.cnt-text{
+    font-size: 25px;
+    margin: 25px 25PX 25PX 25PX;/*top right bottom left */
+    color: #6a6777;
+}
+
+img{
+    height: 50%;
+    background-color: #0066a7;
+    width: 50%;
+}
+
+.choice {
+    margin: 25px 25PX 25PX 25PX;
+    font-size: 25px;
+    color: #0066a7;
+}
+
+.icon{
+    font-size: 25px;
+    margin: 10px 0 0 10px; /*ttop right bottom left */
+}
+
+#address{
+    border: none;
+    height: 50px;
+}
+
+button{
+    border: none;
+    background-color: #00ab00;
+    margin: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.address {
+    margin: 25PX 25PX 25PX 25PX;
+    border: solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    height: 50%;
+}
