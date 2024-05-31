@@ -1,26 +1,29 @@
 body {
     height: 100%;
-    width: device-width;
     margin: 0;
     padding: 0;
     background-image: url("62624.jpg");
+    font-family: 'Roboto', sans-serif;
 }
 
 .title {
-    margin-left: 10%;
+    margin-left: 5%;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
 }
 
 .main {
     height: 82vh;
     margin-top: -20px;
-    padding-left: 50px;
+    margin-left: 45px;
 }
+/*top right bottom left*/
 
 .content {
-    margin: 180px;
-    /* padding-top: 20px; */
     margin-left: 100px;
     height: 64vh;
+    /* width: 75%; */
     display: flex;
     color: black;
 }
@@ -30,6 +33,12 @@ h1{
     padding-top: 20px;
 }
 
+.name-font{
+    height: 50px;
+    padding-top: 20px;
+    font-size: 4vh;
+}
+
 p {
     color: black;
     font-size: 20px;
@@ -37,14 +46,18 @@ p {
 
 .logo {
     display: flex;   
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 140%;
     margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
 .fb, .li, .ig, .x {
     padding: 5px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .fb:hover, .li:hover, .ig:hover, .x:hover {
@@ -58,17 +71,24 @@ p {
 
 .con {
     width: 75%;
-    margin-left: 30px;
+    margin-left: 50px;
     border-radius: 20px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 25px;
+    padding: 25px 0;
+}
+
+.con:hover{
+    transition-duration: 3s;
+    border: 2px solid black;
+    font-size: 25px;
 }
 
 .log {
-    margin-left: 23px;
+    margin-left: 34px;
     width: 80%;
     display: block;
     margin-top: 20px;
@@ -79,8 +99,8 @@ p {
 
 button {
     border: none;
-    color: #fff;
-    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    /* color: #fff;  */
+    background-image: #FFB49A;
     border-radius: 20px;
     background-size: 100% auto;
     font-family: inherit;
@@ -110,7 +130,7 @@ button {
    }
 
 .connect {
-    height: 100%;
+    height: 750px;
     width: 30vh;
     background-color: white;
     text-align: center;
@@ -120,7 +140,7 @@ button {
 .about {
     text-align: center;
     margin-left: 50px;
-    height: 150vh;
+    height: 180vh;
     width: 100vh;
     background-color: white;
     border-radius: 10px;
@@ -129,6 +149,7 @@ button {
 .text {
     margin-left: 60px;
     width: 83vh;
+    font-size: 2vh;
 }
 
 .explain {
@@ -138,10 +159,17 @@ button {
 
 .skills {
     background-color: #fff7f7;
-    height: 60vh;
+    height: 40vh;
     margin: 20px 20px 15vh 20px; /*top right bottom left*/
     display: flex;
     justify-content: space-evenly;
+}
+.events, .exp {
+    background-color: #fff7f7;
+    height: 20vh;
+    margin: 20px 20px 15vh 20px; /*top right bottom left*/
+    /* display: flex; */
+    /* justify-content: space-evenly; */
 }
 
 .skill { 
@@ -151,23 +179,9 @@ button {
 } 
 
 .html, .pic, .ill, .mobile{ 
-    width: 80%; 
-    height: 2%;
+    width: 90%; 
+    height: 5%;
 } 
-
-.know{
-    width: 55%;
-    /* margin: 0 0 0 15vh; */
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.card{
-    margin: 15vh 2vh 0 0; /*top right bottom left*/
-    justify-content: start;
-    height: 4vh;
-    background-color: grey;
-}
 
 .what_i_do {
     margin: 40px;
@@ -179,7 +193,7 @@ button {
 
 .ui {
     padding: 2px;
-    height: 11rem;
+    height: 12rem;
     width: 20rem;
     background-color: antiquewhite;
     margin: 20px 0px 0px 20px;
@@ -188,7 +202,7 @@ button {
 
 .app {
     padding: 2px;
-    height: 11rem;
+    height: 12rem;
     width: 20rem;
     background-color: #bbb2bd;
     margin: 20px 0px 0px 20px;
@@ -197,7 +211,7 @@ button {
 
 .photo {
     padding: 2px;
-    height: 11rem;
+    height: 12rem;
     width: 20rem;
     background-color: #bbb2bd;
     margin: 20px 0px 0px 20px;
@@ -206,23 +220,24 @@ button {
 
 .web{
     padding: 2px;
-    height: 11rem;
+    height: 12rem;
     width: 20rem;
     background-color: antiquewhite;
     margin: 20px 0px 0px 20px;
     border-radius: 15px;
 }
-
 .shortcut {
-    height: 40vh;
+    height: 350px;
     width: 13vh;
-    margin: 2px 0 0 40px; /*top right bottom left*/
+    margin: 2px 0 0 65px; /*top right bottom left*/
     border-radius: 10px;
     background-color: white;
     text-align: center;
 }
 
-.st {
+.st {   
+    height: 350px;
+    height: fit-content;
     margin: 20px;
     background-color: rgb(194, 184, 184);
     border-radius: 15px;
