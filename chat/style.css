@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5941A9; 
+}
+
+.nav-bar {
+    background-color: #1D1128;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1{
+    color: aliceblue;
+}
+.wave {
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.content{
+    background-color: #514F59;
+    width: 957;
+    min-height: 500px;
+    margin: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    }
+    
+.singer{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #5941A9;
+    height: 80px;
+    width: 96%;
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
