@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #cffffc;
+}
+/* nav bar styling starts here */
+nav{
+    display: flex;
+    height: 200px;
+    width: 80%;
+    /* background-color: black; */
+    align-items: center ;
+    justify-content: space-evenly;
+    margin-left: 200px;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: #060707;
+    padding: 20px;
+}
+/* nav bar styling ends here */
+
+/* styling of content starts here  */
+.content{
+    display: flex;
+    width: 100%; 
+}
+
+.best{
+    float: left;
+    /* margin-right: 0; */
+}
